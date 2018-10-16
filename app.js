@@ -65,7 +65,7 @@ UI.prototype.clearFields = function(){
     document.getElementById('isbn').value ='';
 }
 
-//Event Listeners
+//Event Listeners for add book
 document.getElementById('book-form').addEventListener('submit', function(e){
     //console.log('Test');
     const title=document.getElementById('title').value,
@@ -113,6 +113,6 @@ document.getElementById('book-list').addEventListener('click', function(e){
 
     //Show Message
     ui.showAlert('Book Removed!', 'success');
-    
+
     e.preventDefault();
 });
